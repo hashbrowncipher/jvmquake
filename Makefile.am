@@ -1,9 +1,9 @@
 SUBDIRS = src
 ACLOCAL_AMFLAGS = -I m4
 
-.PHONY: test
+.PHONY: integration_test
 
-test:
+integration_test:
 	make -C tests
 	tox -e test
 	tox -e test_jvm
