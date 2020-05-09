@@ -3,6 +3,11 @@ language: c
 services:
 - docker
 
+os: linux
+arch:
+ - amd64
+ - arm64
+
 env:
   matrix:
   - TARGET=test_xenial_openjdk8
